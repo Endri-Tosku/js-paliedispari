@@ -16,13 +16,15 @@ Dichiariamo chi ha vinto.
 // PALIDROMA
 
 
-function itsPalidrom(word) {
+/* function itsPalidrom(word) {
 
-    let letters = word.split("");
+    // let letters = word.split("");
 
-    let reversedLetters = letters.reverse(); console.log(word);
+    // let reversedLetters = letters.reverse(); console.log(word);
 
-    let reversedWord = reversedLetters.join("");
+    // let reversedWord = reversedLetters.join("");
+
+    let reversedWord = word.split('').reverse().join('')
 
     console.log(reversedWord);
 
@@ -37,10 +39,27 @@ function itsPalidrom(word) {
 
 let result = itsPalidrom(prompt("inserisci la tua parola"));
 
-console.log(result);
+console.log(result); */
 
 
 
 
 
-// PARI e DISPARI
+// PARI O DISPARI
+
+const userNumber = Number(prompt(""))
+const computerNumber = Math.floor(Math.random() * 5) + 1;
+
+let somma = userNumber + computerNumber
+console.log(somma);
+
+
+function pariODispari (num) {
+    if (num % 2 === 0) {
+        return "pari"
+    } else {
+        return "dispari"
+    }
+}
+
+console.log(pariODispari(somma));
